@@ -14,5 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $message = "Hello world con LARAVEL!";
+    return view('home', ['message' => $message]);
 });
